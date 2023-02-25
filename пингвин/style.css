@@ -251,7 +251,7 @@ body {
   z-index: -1;
 }
 
-.foot.left {
+.foot.left {   
   left: 25%;
   transform: rotate(80deg);   
 }
