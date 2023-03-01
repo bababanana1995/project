@@ -8,7 +8,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
+<h1 class="cal">Calculator</h1>
+
+    <div class="container">
+<h2>Число: <span class="number"></span></h2>
+<h2>Результат: <span class="test"></span></h2>
+
+    <div class="grid">
         <input type="button" value="1" onclick="num(this.value)">
         <input type="button" value="2" onclick="num(this.value)">
         <input type="button" value="3" onclick="num(this.value)">
@@ -26,5 +32,7 @@
         <input type="button" value="=" onclick="oper(this.value)">
         <input type="button" value="CE" onclick="oper(this.value)">
     </div>
+</div>
+<script src="calculator.js"></script>
 </body>
-</html>
+</html>    
