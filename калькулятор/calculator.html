@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-<h1 class="cal">Calculator</h1>
-
-    <div class="container">
-<h2>Число: <span class="number"></span></h2>
-<h2>Результат: <span class="test"></span></h2>
-
-    <div class="grid">
-        <input type="button" value="1" onclick="num(this.value)">
-        <input type="button" value="2" onclick="num(this.value)">
-        <input type="button" value="3" onclick="num(this.value)">
-        <input type="button" value="4" onclick="num(this.value)">
-        <input type="button" value="5" onclick="num(this.value)">
-        <input type="button" value="6" onclick="num(this.value)">
-        <input type="button" value="7" onclick="num(this.value)">
-        <input type="button" value="8" onclick="num(this.value)">
-        <input type="button" value="9" onclick="num(this.value)">
-        <input type="button" value="0" onclick="num(this.value)">
-        <input type="button" value="+" onclick="oper(this.value)">
-        <input type="button" value="-" onclick="oper(this.value)">
-        <input type="button" value="*" onclick="oper(this.value)">
-        <input type="button" value="/" onclick="oper(this.value)">
-        <input type="button" value="=" onclick="oper(this.value)">
-        <input type="button" value="CE" onclick="oper(this.value)">
-    </div>
-</div>
+<div class="calculator">
+    <form class="calculator__form">
+        <div class="calculator__row">
+            <input class="calculator__display" id="display" type="text" disabled>
+        </div>
+    <form class="calculator__form">
+        <div class="calculator__row">
+            <button type="button" value="c" class="calculator__key calculator__clear">c</button>
+            <button type="button" value="<--" class="calculator__key calculator__backspace"><</button>
+            <button type="button" value="^3" class="calculator__key calculator__power">on</button>
+            <button type="button" value="+" class="calculator__key calculator__button">+</button>
+        </div>
+        <div class="calculator__row">
+            <button type="button" value="9" class="calculator__key calculator__button">9</button>
+            <button type="button" value="8" class="calculator__key calculator__button">8</button>
+            <button type="button" value="7" class="calculator__key calculator__button">7</button>
+            <button type="button" value="-" class="calculator__key calculator__button">-</button>
+        </div>
+        <div class="calculator__row">
+            <button type="button" value="6" class="calculator__key calculator__button">6</button>
+            <button type="button" value="5" class="calculator__key calculator__button">5</button>
+            <button type="button" value="4" class="calculator__key calculator__button">4</button>
+            <button type="button" value="*" class="calculator__key calculator__button">*</button>
+        </div>
+        <div class="calculator__row">
+            <button type="button" value="3" class="calculator__key calculator__button">3</button>
+            <button type="button" value="2" class="calculator__key calculator__button">2</button>
+            <button type="button" value="1" class="calculator__key calculator__button">1</button>
+            <button type="button" value="=" class="calculator__key calculator__key--equal">=</button>
+        </div>
+        <h2>Calculator</h2>
 <script src="calculator.js"></script>
+    </form>
+</div>
 </body>
-</html>    
+
+</html>
