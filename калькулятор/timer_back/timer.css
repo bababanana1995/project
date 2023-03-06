@@ -1,15 +1,38 @@
-.timer__items{
-display: flex;
-font-size: 48px;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
-.timer__item{
+.timer__items {
+    margin: 200px 0 200px 0;
+    display: flex;
+  font-size: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.timer__item {
     position: relative;
-    min-width: 60px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-bottom: 15px;
+    min-width: 80px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 20px;
     text-align: center;
 }
-.timer__item:before{
-    
+
+.timer__item:before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 28px;
+}
+
+.timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -30%;
+
 }
