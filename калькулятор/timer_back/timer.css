@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Stamper ;
+    src: url(font/DS\ Stamper.ttf);
+}
 *,
 *::before,
 *::after {
@@ -6,8 +10,11 @@
 body{
     margin: 0;
 }
+
 .timer__items {
-    background-color: rgb(222, 217, 217);
+    font-family:Stamper ;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(97,125,153,1) 50%, rgba(48,100,111,1) 95%);
     height: 400px;
     display: flex;
   font-size: 90px;
