@@ -14,22 +14,30 @@
 body{
     margin: 0;
 }
+h2{
+ padding-top:50px ;  
+ text-align: center;
+    margin: 0;
+    font-size: 90px;
+}
+.timer{
+      font-family:Stamper,Octin;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(97,125,153,1) 50%, rgba(48,100,111,1) 95%);  
+}
 
 .timer__items {
-    font-family:Octin, Stamper, Arial, Helvetica, sans-serif ;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(97,125,153,1) 50%, rgba(48,100,111,1) 95%);
     height: 400px;
   font-size: 90px;
-    display: flex;
-    justify-content:safe;
-    padding-left: 390px;
+    display:flex;
+    justify-content: center;
+
 }
 
 .timer__item {
-margin-top:130px;
+margin-top:100px;
     position: relative;
-    min-width: 80px;
+    min-width: 100px;
     margin-left: 50px;
     margin-right: 50px;
     text-align: center;
@@ -39,19 +47,17 @@ margin-top:130px;
 .timer__item:before {
     content: attr(data-title);
     display: block;
-    position:relative;
-    /* left: 50%; */
+    position: absolute;
+    left: 50%;
     bottom: 0;
-    transform: translateY(130px);
+    transform: translateX(-50%);
     font-size: 32px;
-    /* margin-bottom: 130px; */
-
+    margin-bottom: 160px;
 }
 
 .timer__item:not(:last-child)::after {
     content: ':';
-    /* text-align: right; */
-    position:absolute;
-    right: -60px;
+    position: absolute;
+    right: -70%;
 
 }
