@@ -15,10 +15,11 @@ body{
     margin: 0;
 }
 h2{
- padding-top:50px ;  
+ padding-top:100px ;  
  text-align: center;
     margin: 0;
     font-size: 90px;
+    line-height: 20px;
 }
 .timer{
       font-family:Octin;
@@ -27,7 +28,7 @@ h2{
 }
 
 .timer__items {
-    height:580px;
+    height:400px;
   font-size: 90px;
     display:flex;
     justify-content: center;
@@ -35,7 +36,7 @@ h2{
 }
 
 .timer__item {
-margin-top:100px;
+margin-top:50px;
     position: relative;
     min-width: 120px;
     margin-left: 50px;
@@ -52,7 +53,7 @@ margin-top:100px;
     bottom: 0;
     transform: translateX(-50%);
     font-size: 32px;
-    margin-bottom: 330px;
+    margin-bottom: 200px;
 }
 
 .timer__item:not(:last-child)::after {
