@@ -1,6 +1,6 @@
 class CountdownTimer {
     constructor(deadline, cbChange, cbComplete) {
-      this._startDate = new Date();
+      this._startDate = new Date('2022-12-28');
       this._cbChange = cbChange;
       this._cbComplete = cbComplete;
       this._timerId = null;
