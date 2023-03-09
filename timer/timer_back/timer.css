@@ -27,7 +27,7 @@ h2{
 }
 
 .timer__items {
-    height: 400px;
+    height:580px;
   font-size: 90px;
     display:flex;
     justify-content: center;
@@ -37,7 +37,7 @@ h2{
 .timer__item {
 margin-top:100px;
     position: relative;
-    min-width: 100px;
+    min-width: 120px;
     margin-left: 50px;
     margin-right: 50px;
     text-align: center;
@@ -52,12 +52,12 @@ margin-top:100px;
     bottom: 0;
     transform: translateX(-50%);
     font-size: 32px;
-    margin-bottom: 160px;
+    margin-bottom: 330px;
 }
 
 .timer__item:not(:last-child)::after {
     content: ':';
     position: absolute;
-    right: -70%;
+    right: -50%;
 
 }
