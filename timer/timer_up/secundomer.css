@@ -1,42 +1,48 @@
 @font-face {
-    font-family: Stamper ;
+    font-family: Stamper;
     src: url(../font/DS\ Stamper.ttf);
 }
+
 @font-face {
-    font-family: Octin ;
+    font-family: Octin;
     src: url(../font/OctinVintageBRg\ Bold.ttf);
 }
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
 }
-h2{
- padding-top:100px ;  
- text-align: center;
+
+h2 {
+    padding-top: 100px;
+    text-align: center;
     margin: 0;
     font-size: 90px;
     line-height: 20px;
 }
-.timer{
-      font-family:Octin;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(97,125,153,1) 50%, rgba(48,100,111,1) 95%);  
+
+.timer {
+    padding-top:100px ;
+    font-family: Octin;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(97, 125, 153, 1) 50%, rgba(48, 100, 111, 1) 95%);
 }
 
 .timer__items {
-    height:400px;
-  font-size: 90px;
-    display:flex;
+    height: 400px;
+    font-size: 90px;
+    display: flex;
     justify-content: center;
 
 }
 
 .timer__item {
-margin-top:50px;
+    margin-top: 50px;
     position: relative;
     min-width: 120px;
     margin-left: 50px;
