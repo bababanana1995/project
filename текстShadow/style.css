@@ -1,66 +1,80 @@
 * {
     box-sizing: border-box;
 }
-.range{
+
+.range {
     -webkit-appearance: none;
     border: 1px solid grey;
     height: 1px;
 }
-.range::-webkit-slider-thumb{
+
+.range::-webkit-slider-thumb {
     -webkit-appearance: none;
     background-color: rgb(188, 188, 188);
-    width:15px ;
-    height:15px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     cursor: pointer;
 }
-h1{
+
+h1 {
     font-size: 50px;
-    margin:30px 0 20px 80px;
-}  
-h4{
+    margin: 30px 0 20px 80px;
+}
+
+h4 {
     font-size: 30px;
     margin-bottom: 10px;
 }
-form{
-        margin: 10px 30px 20px 30px ;
+
+form {
+    margin: 10px 30px 20px 30px;
 }
-.font-family{
+
+.font-family {
     margin-bottom: 10px;
 }
-.container{
-height: 500px;
+
+.container {
+    height: 500px;
     display: grid;
     grid-template-columns: 300px 900px;
-justify-content: space-between;
+    justify-content: space-between;
 
 }
+
 .range-d {
     text-align: center;
-display: grid;
+    display: grid;
 }
 
-.text-w{
+.text-w {
     text-align: center;
     justify-items: center;
     width: 600px;
     display: grid;
 }
-#text-1{
+
+#text-1 {
     width: 300px;
     height: 80px;
 }
-#cssCode{
+
+#cssCode {
     width: 300px;
     height: 100px;
 }
-textarea{
+
+.result-2 textarea {
     resize: none;
+    
 }
-.result {
-    background-color: rgb(219, 157, 56);
+.result-2{
+    margin-top: 300px;
 }
-#result{
+
+
+#result {
     position: fixed;
-    padding-top: 200px;
+    
 }
