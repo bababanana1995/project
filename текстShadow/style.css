@@ -38,9 +38,8 @@ justify-content: space-between;
 .range-d {
     text-align: center;
 display: grid;
-
-
 }
+
 .text-w{
     text-align: center;
     justify-items: center;
@@ -60,4 +59,8 @@ textarea{
 }
 .result {
     background-color: rgb(219, 157, 56);
+}
+#result{
+    position: fixed;
+    padding-top: 200px;
 }
