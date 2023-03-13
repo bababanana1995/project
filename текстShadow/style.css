@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;
 }
+@media screen and (max-device-width: 480px) {
 
+}
 .range {
     -webkit-appearance: none;
     border: 1px solid grey;
@@ -76,5 +78,7 @@ form {
 
 #result {
     position: fixed;
+    word-break: break-all;
+    max-width: 400px;
     
 }
