@@ -10,7 +10,7 @@ body {
 }
 .header{
 
-    /* text-align: start; */
+    text-align: end;
     font-size: 60px;
 }
 .range {
@@ -43,14 +43,18 @@ form {
 }
 
 .container {
-    height: 300px;
+    width:1200px;
+    height: 600px;
     display: grid;
-    grid-template-columns: 300px 600px 100px 100px;
+    grid-template-columns: 400px 750px 100px;
     justify-content: space-between;
+    
+     justify-items: center;
 
 }
 
 .range-d {
+    width: 400px;
     text-align: center;
     display: grid;
     background: rgb(0, 24, 89);
@@ -63,9 +67,7 @@ box-shadow: 0 0 5px 3px rgb(41, 57, 100);
 
 .text-w {
     text-align: center;
-    width: 600px;
-
-
+    width: 400px;
 }
 
 #cssCode {
@@ -79,7 +81,12 @@ box-shadow: 0 0 5px 3px rgb(41, 57, 100);
     border: 2px solid black;
 
 }
+.result-2{
+    text-align: center;
+}
 #result {
+    
+    text-align: center;
     word-break: break-all;
 }
 a{
