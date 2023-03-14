@@ -10,64 +10,71 @@
 </head>
 
 <body>
-    
-    <form>
-       
-        <div class="container">
-            <div class="range-d">
-               
-                <h3>Настройки</h3>
-                <!-- Остальные элементы формы здесь -->
-                <label  for="font-family">Шрифт</label>
-                <select class="font-family" id="font-family">
-                    <option value="Arial">Arial</option>
-                    <option value="Palatino Linotype">Palatino Linotype</option>
-                    <option value="Times New Roman">Times New Roman</option>
-                    <option value="Georgia">Georgia</option>
-                    <option value="Courier New">Courier New</option>
-                    <option value="Verdana">Verdana</option>
-                    <option value="Comic Sans MS">Comic Sans MS</option>
-                    <option value="Trebuchet MS">Trebuchet MS</option>
-                    <option value="Lucida Console">Lucida Console</option>
-                </select>
+    <div class="all">
+    <div class="container">
+
+        <div class="range-d">
+            <h3>Настройки</h3>
+            <!-- Остальные элементы формы здесь -->
+            <label for="font-family">Шрифт</label>
+            <select class="font-family" id="font-family">
+                <option value="Arial">Arial</option>
+                <option value="Palatino Linotype">Palatino Linotype</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Comic Sans MS">Comic Sans MS</option>
+                <option value="Trebuchet MS">Trebuchet MS</option>
+                <option value="Lucida Console">Lucida Console</option>
+            </select>
+            <label for="font-size"> Размер Шрифта</label>
+            <input class="range" type="range" id="font-size" min="30" max="85" step="1" value="80">
 
 
-                <label for="font-size"> Размер Шрифта</label>
-                <input class="range" type="range" id="font-size" min="30" max="85" step="1" value="80">
+            <label for="offsetX"> Смещение по оси X</label>
+            <input class="range" type="range" id="offsetX" min="-60" max="60" step="1" value="20">
+
+            <label for="offsetY"> Смещение по оси Y</label>
+            <input class="range" type="range" id="offsetY" min="-60" max="60" step="1" value="40">
+
+            <label for="blur">Разымытие</label>
+            <input class="range" type="range" id="blur" min="0" max="40" step="1" value="8">
 
 
-                <label for="offsetX"> Смещение по оси X</label>
-                <input class="range" type="range" id="offsetX" min="-60" max="60" step="1" value="20">
-
-                <label for="offsetY"> Смещение по оси Y</label>
-                <input class="range" type="range" id="offsetY" min="-60" max="60" step="1" value="40">
-
-                <label for="blur">Разымытие</label>
-                <input class="range" type="range" id="blur" min="0" max="40" step="1" value="8">
-
-
-                <label for="color"> Выберите Цвет</label>
-                <div>
-                    <input type="color" id="colorText">
-                    <input type="color" id="color">
-                </div>
-
-                <label for="opacity">Прозрачность</label>
-                <input class="range" type="range" id="opacity" min="0" max="1" step="0.01" value="0.5">
-
-                <input class="res" type="text" maxlength="20" for="result" placeholder="Введите текст на который наложить тень">
- 
+            <label for="color"> Выберите Цвет</label>
+            <div>
+                <input type="color" id="colorText">
+                <input type="color" id="color">
             </div>
-            <div class="result-2">
-                <h4>Результат</h4>
-                <textarea id="cssCode" readonly></textarea>
-                <div class="text-w">
-                    <h2 id="result">Write Your<br> Text</h2>
-                    
-                </div>
+
+            <label for="opacity">Прозрачность</label>
+            <input class="range" type="range" id="opacity" min="0" max="1" step="0.01" value="0.5">
+
+            <input class="res" type="text" maxlength="20" for="result"
+                placeholder="Введите текст на который наложить тень">
+
+
+        </div>
+        <div class="result-2">
+            <h4>Результат</h4>
+            <textarea id="cssCode" readonly></textarea>
+            <div class="text-w">
+                <h2 id="result">Write Your<br> Text</h2>
+
             </div>
-            <div> <p class="header">Text Shadow Generator</p></div>
-    <script src="form.js"> </script>
+        </div>
+        <div>
+            <p class="header">Text Shadow Generator</p>
+        </div>
+        <img id="cat"
+            src="https://catherineasquithgallery.com/uploads/posts/2021-03/1614547459_68-p-kotenok-na-belom-fone-92.png"
+            alt="ssss">
+        <!-- <img id="meow" src="https://www.clipartmax.com/png/full/420-4209649_executive-director-you-will-be-paired-with-the-therapist-tricky-conversations.png" alt="ssss"> -->
+    </div>
+</div>
+        <script src="form.js"> </script>
+
 </body>
 
 </html>
