@@ -47,7 +47,7 @@ margin: 0   auto;
     width:1200px;
     height: 600px;
     display: grid;
-    grid-template-columns: 200px 750px 100px;
+    grid-template-columns: 300px 750px 100px;
     justify-content: space-between;
 
     justify-items: center;
@@ -98,7 +98,21 @@ a{
 #cat{
     width: 200px;
     position: absolute;
-    left: 150px;
+    left: 250px;
     top: 30px;
 }
+.fon{
+    height: 4000px;
+}
+
+
+/* @media (width:100px) {
+    #cat{
+        width: 200px;
+        position: absolute;
+        left: 1000px;
+        top: 30px;
+    }
+    
+} */
 
