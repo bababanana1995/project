@@ -1,0 +1,14 @@
+td, th {
+    border: 1px solid black;
+    text-align:center;
+    padding: 30px;
+}
+table{
+    border-collapse:collapse;
+}
+.row-color{
+    background: rgb(230, 217, 217);
+}
+.row-color:hover{
+    background: red;
+}
