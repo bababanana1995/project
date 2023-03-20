@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //     const bodyParts = ["глаз", "нос", "жопа", "писка"];
+        //     const bodyPartsL = ["глаз", "нос", "жопа", "писка"];
+        //     const adjactive = ["вонючии", "унылые", "смешные", "никчемные", "глупые"];
+        //     const bzbz = ["мухи", "пиздятины", "голубятины", "петушатины"];
+
+        //     let a = bodyParts[Math.floor(Math.random() * bodyParts.length)]
+        //     let d = bodyPartsL[Math.floor(Math.random() * bodyPartsL.length)]
+        //     let b = adjactive[Math.floor(Math.random() * adjactive.length)]
+        //     let c = bzbz[Math.floor(Math.random() * bzbz.length)]
+
+        //     // let random = "У тебя " + a + " словно " + b + " " + c ;
+
+        // let randomNew = ["У тебя",a,"ещё более",b,"чем",d,c ].join(" ")
+        // alert(randomNew)
+
+        // let arr = [3,2,1]
+        // alert(arr.join(" больше,чем "))
+        // var dog = { name: "Оладушек", age: 6, color: "белый", bark: "Гав тяф тяф!" };
+        // var cat = { name: "Гармония", age: 8, color: "черепаховый" }
+        // Object.keys(dog)
+        // ["name", "bark"]
+
+        // var movies = {
+        //  "В поисках Немо": {
+        //  releaseDate: 2003,
+        //  duration: 100,
+        //  actors: ["Альберт Брукс", "Эллен Дедженерес",
+        //  "Александр Гоулд"],
+        //  format: "DVD"
+        //  },
+        //  "Звездные войны: Эпизод VI — Возвращение джедая": {
+        //  releaseDate: 1983,
+        //  duration: 134,
+        //  actors: ["Марк Хэмилл", "Харрисон Форд", "Кэрри Фишер"],
+        //  format: "DVD"
+        //  },
+        //  "Гарри Поттер и Кубок огня": {
+        //  releaseDate: 2005,
+        //  duration: 157,
+        //  actors: ["Дэниел Рэдклифф", "Эмма Уотсон", "Руперт Гринт"],
+        //  format: "Blu-ray"
+        //  }
+        // }
+
+        // let score = {
+        //     Kate : 0,
+        //     Alex : 0,
+        //     danil : 0
+        // }
+        // let name = 'Danil'
+        // console.log("Hello, " + name)
+        // if(name.length > 6){
+        //     console.log("long name")
+        // }else{
+        //     console.log('short name')
+        // }
+        // let name = prompt("Your name?")
+        // if(name === "Danil"){
+        //     alert("Hello, Danil")
+        // }else{
+        //     alert("Error")
+        // // }
+        // let i = prompt("Введите количество овец")
+        // for (let sheepCounted = 0; sheepCounted < i; sheepCounted++){
+        //     alert("Считаю овец" + sheepCounted + "!") 
+        // }
+        // alert("Вы уснули")
+        // let animals = ["лев", "фламинго", "белый медведь", "удав"];
+        // for(let i = 0; i < animals.length; i++){
+        //     console.log('This zoo have ' + animals[i])
+        // }
+        // for(x = 100; x > 0; x /= 1){
+        //     console.log(x)
+        // }
+        // let animals = ["Кот", "Рыба", "Лемур", "Комодский варан"];
+        // for(let i = 0; i < animals.length; i++){
+        //     animals[i] = animals[i] + ' прекрасное животное'
+        // }
+        // console.log(animals.join(" - ").split('-'))
+        let alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+        let randomString = ""
+        let i = Math.floor(Math.random() * alphabet.length)
+        while (randomString.length < 6) {
+            randomString += alphabet[i];
+            console.log(randomString)
+        }
+    </script>
+</body>
+
+</html>
