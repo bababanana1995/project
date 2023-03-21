@@ -13,11 +13,11 @@
     <script>
         let words = [
             'hello',
-            // 'dinosaurus',
-            // 'dragon',
-            // 'frog',
-            // 'horse',
-            // 'computer'
+            'dinosaurus',
+            'dragon',
+            'frog',
+            'horse',
+            'computer'
         ]
         let word = words[Math.floor(Math.random() * words.length)]
         let answerArray = []
@@ -40,7 +40,7 @@
                
                 guess = guess.toLowerCase()
                 for (let j = 0; j < word.length; j++) {
-                    if (word[j] === guess) {
+                    if (word[j] === guess && answerArray[j] === "_") {
                         answerArray[j] = guess
                         remainingLetters--
                         isGuessCorrect = true
