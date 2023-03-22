@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function pickRandomWord(words) {
+            return words[Math.floor(Math.random() * words.length)];
+        };
+        function randomGenerator() {
+            let randomBodyParts = ["глаз", "нос", "череп"];
+            let randomAdjectives = ["вонючая", "унылая", "дурацкая"];
+            let randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+
+
+            let randomStr = `У тебя ${pickRandomWord(randomBodyParts)} словно ${pickRandomWord(randomAdjectives)} ${pickRandomWord(randomWords)}`
+            return randomStr
+        }
+
+    </script>
+</body>
+
+</html>
