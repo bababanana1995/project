@@ -37,7 +37,8 @@
 
             }else {
             let isGuessCorrect = false
-               
+            //    тут мы сделали условие, что бы регистр был маленьким всегда, и 
+            // буква вводилась только один раз и remainingLetters не уменьшался
                 guess = guess.toLowerCase()
                 for (let j = 0; j < word.length; j++) {
                     if (word[j] === guess && answerArray[j] === "_") {
@@ -51,10 +52,9 @@
                 attempts--
                 alert(`Буква "${guess}" неправильная осталось ${attempts} попыток`)
               }  
-                // Обновляем состояние игры
+
             }
-            // Обновляем answerArray и remainingLetters для каждого
-            // вхождения угаданной буквы
+
         }
         alert(answerArray.join(" "))
         if (attempts > 0) {
