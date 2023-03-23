@@ -11,19 +11,41 @@
 <body>
     <h1>Виселица</h1>
     <script>
-        let words = [
+        function pickWord() {
+            let words = [
             'hello',
-            'dinosaurus',
-            'dragon',
-            'frog',
-            'horse',
-            'computer'
+            // 'dinosaurus',
+            // 'dragon',
+            // 'frog',
+            // 'horse',
+            // 'computer'
         ]
-        let word = words[Math.floor(Math.random() * words.length)]
-        let answerArray = []
+        return words[Math.floor(Math.random() * words.length)]
+            
+            // Возвращает случайно выбранное слово
+        };
+
+        function setupAnswerArray(word) {
+            let answerArray = []
         for (let i = 0; i < word.length; i++) {
             answerArray[i] = "_"
         }
+        return answerArray
+            // Возвращает итоговый массив для заданного слова word
+        };
+        function showPlayerProgress(answerArray){
+        alert(answerArray.join(" ")) 
+
+            // С помощью alert отображает текущее состояние игры
+        };
+        function getGuess() {
+            return prompt("Угадайте букву, или нажмите Отмена для выхода из игры.");
+
+            // Запрашивает ответ игрока с помощью prompt
+        };
+
+
+
         let remainingLetters = word.length
         let attempts = 10;
 
