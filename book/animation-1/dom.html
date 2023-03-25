@@ -4,23 +4,16 @@
 <head>
   <title>Интерактивное программирование</title>
   <style>
-    #stoping{
-      position: absolute;
-      left: 600px;
-      top: 200px;
-    }
-    #playing{
-      position: absolute;
-      left: 600px;
-      top: 150px;
-    }
+h1{
+  cursor: pointer;
+}
   </style>
 </head>
 
 <body>
   <h1 id="heading">Привет, мир!</h1>
-  <button id="stoping">Стоп!</button>
-  <button id="playing">Play</button>
+  <!-- <button id="stoping">Стоп!</button>
+  <button id="playing">Play</button> -->
 
   <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 
@@ -63,25 +56,60 @@
       }
     }
 // setInterval(moveHeading,1)
-let interval
+let clicks = 0
+let speed = 5
+let interval = 0
+$("#heading").click(function () {
+  clearInterval(clicks)
+  $('#heading').text('Вы победили')
+  clicks++
+  if(clicks < 10)
+  startAnimation()
+
+
+});
     function startAnimation() {
-      interval = setInterval(moveHeading, 1);
-    }
 
-    function stopAnimation() {
-      clearInterval(interval);
-    }
-
-    $("#stoping").click(function () {
-      stopAnimation();
       
-    });
-    $("#playing").click(function () {
-      startAnimation()
-      ;
-    });
-    
-    ;
+     interval = setInterval(moveHeading, speed);
+     if(interval === 1){
+      $('#heading').text('Это 1')
+      speed--
+     }
+     if(interval === 2){
+      $('#heading').text('Это 2')
+     speed--
+    }
+     if(interval === 3){
+      $('#heading').text('Это 3')
+      interval--
+     }
+     if(interval === 4){
+      $('#heading').text('Это 4')
+      speed--
+     }
+     if(interval === 5){
+      $('#heading').text('Это 5')
+      speed--
+     }
+     if(interval === 6){
+      $('#heading').text('Это 6')
+      speed--
+     }
+     if(interval === 7){
+      $('#heading').text('Это 7')
+      speed --
+     }
+     if(interval === 8){
+      $('#heading').text('Это 8')
+      speed --
+     }
+     if(interval === 9){
+      $('#heading').text('Это 9')
+     }
+
+
+    } 
   </script>
 </body>
 
