@@ -3,10 +3,24 @@
 
 <head>
   <title>Интерактивное программирование</title>
+  <style>
+    #stoping{
+      position: absolute;
+      left: 600px;
+      top: 200px;
+    }
+    #playing{
+      position: absolute;
+      left: 600px;
+      top: 150px;
+    }
+  </style>
 </head>
 
 <body>
   <h1 id="heading">Привет, мир!</h1>
+  <button id="stoping">Стоп!</button>
+  <button id="playing">Play</button>
 
   <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 
@@ -48,21 +62,24 @@
         }
       }
     }
-setInterval(moveHeading,1)
-    // function startAnimation() {
-    //   let interval = setInterval(moveHeading, 10);
-    // }
+// setInterval(moveHeading,1)
+let interval
+    function startAnimation() {
+      interval = setInterval(moveHeading, 1);
+    }
 
-    // function stopAnimation() {
-    //   clearInterval(interval);
-    // }
+    function stopAnimation() {
+      clearInterval(interval);
+    }
 
-    // $("#heading").click(function () {
-    //   stopAnimation();
-    // });
-    // $("#heading").click(function () {
-    //   console.log(startAnimation());
-    // });
+    $("#stoping").click(function () {
+      stopAnimation();
+      
+    });
+    $("#playing").click(function () {
+      startAnimation()
+      ;
+    });
     
     ;
   </script>
