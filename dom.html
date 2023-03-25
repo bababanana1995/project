@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Интерактивное программирование</title>
+  <title>Интерактивное программирование</title>
 </head>
 
 <body>
-    <h1 id="heading">Привет, мир!</h1>
+  <h1 id="heading">Привет, мир!</h1>
 
-    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 
-    <script>
+  <script>
+
     var direction = 'вправо';
     var offset = 0;
 
     $("#heading").offset({ left: offset, top: offset });
 
-  function moveHeading() {
+    function moveHeading() {
       if (direction === 'вправо') {
         $("#heading").offset({ left: offset });
         offset++;
@@ -23,31 +25,47 @@
           offset = 0;
           direction = 'вниз';
         }
-        }else if(direction === 'вниз'){
-          $("#heading").offset({ top: offset });
-          offset++
-          if(offset>500){
+      } else if (direction === 'вниз') {
+        $("#heading").offset({ top: offset });
+        offset++
+        if (offset > 500) {
           offset = 1000
           direction = 'влево'
-          }
-        }else if(direction === 'влево'){
-          $("#heading").offset({left:offset})
-          offset--
-          if(offset < 0){
-            offset = 500
-            direction = 'вверх'
-          }
-          }else if(direction === 'вверх'){
-            $("#heading").offset({ top: offset });
-            offset--
-            if(offset < 0){
-              offset = 0
-              direction = 'вправо'
-            }
-          }
         }
+      } else if (direction === 'влево') {
+        $("#heading").offset({ left: offset })
+        offset--
+        if (offset < 0) {
+          offset = 500
+          direction = 'вверх'
+        }
+      } else if (direction === 'вверх') {
+        $("#heading").offset({ top: offset });
+        offset--
+        if (offset < 0) {
+          offset = 0
+          direction = 'вправо'
+        }
+      }
+    }
+setInterval(moveHeading,1)
+    // function startAnimation() {
+    //   let interval = setInterval(moveHeading, 10);
+    // }
 
-    setInterval(moveHeading, 0,5);
-    </script>
+    // function stopAnimation() {
+    //   clearInterval(interval);
+    // }
+
+    // $("#heading").click(function () {
+    //   stopAnimation();
+    // });
+    // $("#heading").click(function () {
+    //   console.log(startAnimation());
+    // });
+    
+    ;
+  </script>
 </body>
+
 </html>
