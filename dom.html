@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta charset="UTF-8">
- <title>Изучаем DOM</title>
+    <title>Интерактивное программирование</title>
 </head>
+
 <body>
- <h1 id="main-heading">Привет, мир!</h1>
- <script>
-let headingElement = document.getElementById("main-heading");
+    <h1 id="heading">Привет, мир!</h1>
 
- console.log(headingElement.innerHTML);
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 
- var newHeadingText = prompt("Введите новый заголовок:");
+    <script>
+    var direction = 'вправо';
+    var offset = 0;
 
- headingElement.innerHTML = newHeadingText;
- </script>
+    $("#heading").offset({ left: offset, top: offset });
+
+  function moveHeading() {
+      if (direction === 'вправо') {
+        $("#heading").offset({ left: offset });
+        offset++;
+        if (offset > 1000) {
+          offset = 0;
+          direction = 'вниз';
+        }
+        }else if(direction === 'вниз'){
+          $("#heading").offset({ top: offset });
+          offset++
+          if(offset>500){
+          offset = 1000
+          direction = 'влево'
+          }
+        }else if(direction === 'влево'){
+          $("#heading").offset({left:offset})
+          offset--
+          if(offset < 0){
+            offset = 500
+            direction = 'вверх'
+          }
+          }else if(direction === 'вверх'){
+            $("#heading").offset({ top: offset });
+            offset--
+            if(offset < 0){
+              offset = 0
+              direction = 'вправо'
+            }
+          }
+        }
+
+    setInterval(moveHeading, 0,5);
+    </script>
 </body>
 </html>
