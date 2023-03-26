@@ -65,10 +65,15 @@ function getRandomInt(min,max){
     return Math.floor(Math.random() *(max - min + 1))+min
 }
 function getRandomShift() {
-  return getRandomInt(0, 30);
+  return getRandomInt(5, 30);
 }
 setInterval(function() {
   tesla.moveRight(getRandomShift());
+  tesla.moveDown(getRandomShift());
+  // tesla.moveLeft(getRandomShift());
+  tesla.moveUp(getRandomShift());
+
+
 }, 30);
 
 setInterval(function() {
