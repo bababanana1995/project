@@ -10,9 +10,13 @@
 
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
     <script>
- var Car = function (x, y) {
+        
+ var Car = function (x, y, speed) {
  this.x = x;
  this.y = y;
+ this.draw();
+this.speed = speed
+
 };
  Car.prototype.draw = function () {
  var carHtml = '<img src="car.webp">';
@@ -24,25 +28,52 @@
  });
  $("body").append(this.carElement);
 };
-var tesla = new Car(20, 20);
-var nissan = new Car(100, 200);
-tesla.draw();
-nissan.draw();
+var tesla = new Car(20, 20,10);
+var nissan = new Car(100, 200,9);
+// tesla.draw();
+// nissan.draw();
 
-Car.prototype.moveRight = function () {
- this.x += 5;
+Car.prototype.moveRight = function (shift) {
+ this.x += shift;
  this.carElement.css({
  left: this.x,
  top: this.y
  });
 };
+Car.prototype.moveLeft = function (shift) {
+ this.x -= shift;
+ this.carElement.css({
+ left: this.x,
+ top: this.y
+ });
+};
+Car.prototype.moveUp = function (shift) {
+ this.y -= shift;
+ this.carElement.css({
+ left: this.x,
+ top: this.y
+ });
+};
+Car.prototype.moveDown = function (shift) {
+ this.y += shift;
+ this.carElement.css({
+ left: this.x,
+ top: this.y
+ });
+};
+function getRandomInt(min,max){
+    return Math.floor(Math.random() *(max - min + 1))+min
+}
+function getRandomShift() {
+  return getRandomInt(0, 30);
+}
 setInterval(function() {
-  tesla.moveRight();
-}, 45);
+  tesla.moveRight(getRandomShift());
+}, 30);
 
 setInterval(function() {
-  nissan.moveRight();
-}, 50);
+  nissan.moveRight(getRandomShift());
+}, 30);
 
     </script>
 </body>
