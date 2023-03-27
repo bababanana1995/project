@@ -12,21 +12,21 @@
         let canvas = document.getElementById('canvas')
         let width = canvas.width;
         let height = canvas.height;
-      let number = 100
+        let number = 100
         let Ball = function () {
             this.x = 250;
             this.y = 250;
-            this.xSpeed = ( Math.random()* 10);
-            this.ySpeed = ( Math.random()* 10);
-            let colors = ["Red", "Orange", "Yellow", "Green", "Blue",  "Purple"];
+            this.xSpeed = (Math.random() * 10);
+            this.ySpeed = (Math.random() * 10);
+            let colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple"];
             this.color = pickRandomWords(colors)
         };
-        function pickRandomWords(words){
-            return words[Math.floor(Math.random()* words.length)]
+        function pickRandomWords(words) {
+            return words[Math.floor(Math.random() * words.length)]
         }
-        
+
         let balls = []
-        for(let i=0; i<number;i++){
+        for (let i = 0; i < number; i++) {
             balls[i] = new Ball()
         }
         let circle = function (x, y, radius, fillCircle) {
@@ -38,7 +38,7 @@
                 ctx.stroke();
             }
         };
-        
+
         Ball.prototype.draw = function () {
             ctx.fillStyle = this.color;
             circle(this.x, this.y, 20, true);
@@ -57,20 +57,20 @@
         };
         // var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
-        
+
 
         setInterval(function () {
-      ctx.clearRect(0, 0, width, height);
+            ctx.clearRect(0, 0, width, height);
 
-      for (var i = 0; i < balls.length; i++) {
-        balls[i].draw();
-        balls[i].move();
-        balls[i].checkCollision();
-      }
+            for (var i = 0; i < balls.length; i++) {
+                balls[i].draw();
+                balls[i].move();
+                balls[i].checkCollision();
+            }
 
-      ctx.strokeRect(0, 0, width, height);
-    }, 30);
-   
+            ctx.strokeRect(0, 0, width, height);
+        }, 30);
+
     </script>
 </body>
 
