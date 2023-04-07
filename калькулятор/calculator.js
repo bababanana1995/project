@@ -10,6 +10,11 @@ $(document).ready(function () {
     var calcSpace = $('.calculator__backspace');
 
 
+    
+
+
+
+
     //init calc keys
     calcKeys.each(function () {
         var current = $(this).attr('value');
